@@ -36,7 +36,7 @@ spec:
           - name: UI_HOST
             value: "cvat-frontend-service"
           - name: ALLOWED_HOSTS
-            value: ".orbit.apicai.de"
+            value: "{MY_URL}"
           - name: CVAT_REDIS_HOST
             value: "cvat-redis-service"
           - name: CVAT_POSTGRES_HOST
