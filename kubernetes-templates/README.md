@@ -15,7 +15,7 @@ docker push $CI_REGISTRY_IMAGE/backend:release-1.1.0
 
 echo "Building frontend"
 docker build --file Dockerfile.ui \
-  --tag $CI_REGISTRY_IMAGE/frontend:release-1.1.0 - .
+  --tag $CI_REGISTRY_IMAGE/frontend:release-1.1.0 .
 docker push $CI_REGISTRY_IMAGE/frontend:release-1.1.0
 ```
 
