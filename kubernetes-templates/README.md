@@ -27,12 +27,14 @@ docker push $CI_REGISTRY_IMAGE/frontend:release-1.1.0
 `kubernetes-templates/04_cvat_backend_deployment.yml` and
 `kubernetes-templates/04_cvat_frontend_deployment.yml`.
 Furthermore, adjusting their pull secrets or remove the lines accordingly.
-2.  Replacing the domain dummy with your real domain name
+
+1.  Replacing the domain dummy with your real domain name
 `cvat.my.cool.domain.com`.
 Replace `{MY_SERVER_URL_COM}` in
 `kubernetes-templates/04_cvat_frontend_deployment.yml` and
 `kubernetes-templates/05_cvat_proxy_configmap.yml`.
-3.  Insert your choosen database password the
+
+1.  Insert your choosen database password the
 `kubernetes-templates/02_database_secrets.yml`
 
 ## Deploying to the cluster
