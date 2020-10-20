@@ -29,6 +29,10 @@ spec:
               cpu: 10m
               memory: 100Mi
           env:
+          - name: CVAT_NUCLIO_HOST
+            value: "nuclio-service"
+          - name: no_proxy
+            value: "$(CVAT_NUCLIO_HOST)"
           - name: DJANGO_MODWSGI_EXTRA_ARGS
             value: ""
           - name: UI_PORT
